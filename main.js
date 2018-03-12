@@ -13,8 +13,8 @@ $(document).ready(function(){
       $.ajax({
         url:'https://api.github.com/users/'+username+'/repos',
         data:{
-          client_id:'97b26d4e8ed886bd89fa',
-          client_secret:'f5ebe96125addf1d85c64d0c72f810011da3401f',
+          client_id:'23b820abb52b876c824c',
+          client_secret:'a28c51b364a8097627ca487a52948add0a213df1',
           sort: 'created: asc',
           per_page: 5
         }
@@ -57,10 +57,13 @@ $(document).ready(function(){
               <span class="label label-info">Following: ${user.following}</span>
               <br><br>
               <ul class="list-group">
+                <li class="list-group-item">Bio: ${user.bio}</li>
+                <li class="list-group-item">Email address:${user.email}</li>
                 <li class="list-group-item">Company: ${user.company}</li>
                 <li class="list-group-item">Website/blog: <a href="${user.blog}" target="_blank">${user.blog}</a></li>
                 <li class="list-group-item">Location: ${user.location}</li>
                 <li class="list-group-item">Member Since: ${user.created_at}</li>
+                <li class="list-group-item">Last Updated at: ${user.updated_at}</li>
               </ul>
               </div>
             </div>
