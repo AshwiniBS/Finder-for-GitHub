@@ -9,6 +9,7 @@
           <!-- Bootstrap core CSS -->
           <link href="https://bootswatch.com/4/simplex/bootstrap.min.css" rel="stylesheet">
           <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
@@ -22,13 +23,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Finder for Github</a>
+          
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
                <li class="nav-item active">
-                      <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
-               </li>
+                <a class="navbar-brand" href="#"><i class="fab fa-github"></i>  Finder for Github </a></li>
+               <li><a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -52,7 +53,7 @@
               <div class="searchContainer">
                 <h1>Search Github Users</h1>
                 <p class="lead">Enter a username to fetch a users profile info and repos</p>
-                <input type="text" id="searchUser" class="form-control" placeholder="Github Username...">
+                <i class="fas fa-search"></i><input type="text" id="searchUser" class="form-control" placeholder="Github Username...">
               </div>
               <br>
               <div id="profile"></div>
@@ -60,6 +61,7 @@
             </div>
             <!-- /.container -->
 
+            <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
             <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
             <script src="main.js"></script>
