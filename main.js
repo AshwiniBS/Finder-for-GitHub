@@ -64,6 +64,7 @@ $(document).ready(function(){
                 <li class="list-group-item">Location: ${user.location}</li>
                 <li class="list-group-item">Member Since: ${user.created_at}</li>
                 <li class="list-group-item">Last Updated at: ${user.updated_at}</li>
+                <a target="_blank" class="btn btn-primary btn-block" href="mailto:{user.email}">Mail</a>
               </ul>
               </div>
             </div>
